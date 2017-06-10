@@ -12,7 +12,7 @@ main = panel
 panelStyle : Attribute msg
 panelStyle =
     style
-      [ ("width", "50%")
+      [ ("width", "800px")
       , ("margin-top", "100px")
       , ("margin-left", "auto")
       , ("margin-right", "auto")
@@ -29,7 +29,7 @@ panel =
 headerStyle : Attribute msg
 headerStyle =
     style
-      [ ("border", "1px solid black")
+      [ ("border-bottom", "1px solid lightgrey")
       , ("padding", "2px")
       ]
 
@@ -37,7 +37,7 @@ headerStyle =
 header : Html msg
 header =
     div [ headerStyle ]
-        [ div [ style [ ("font-size", "200%") ] ] [ text "TITLE" ]
+        [ div [ style [ ("font-size", "2em") ] ] [ text "SANMonitor" ]
         , identity
         ]
 
@@ -45,15 +45,19 @@ header =
 identity : Html msg        
 identity =
     div [ style [ ("text-align", "right") ] ]
-        [ span [ style [ ("margin-right", "1%") ] ] [ text "INDETITY" ]
-        , text "LOGOUT"
+        [ span [ style [ ("margin-right", "0.5em")
+                       , ("font-style", "italic")
+                       ] ] [ text "Welcome, Stéphane Nsakala" ]
+        , span [ style [ ("", "") ] ]
+            [ a [ href "#" ] [ text "Logout" ] ]
         ]
     
 controlPanelStyle : Attribute msg
 controlPanelStyle =
-    style [ ("border", "1px solid blue")
-          , ("margin-top", "2%")
-          , ("margin-bottom", "2%")
+    style [ ("text-align", "center")
+          , ("margin-top", "2em")
+          , ("margin-bottom", "2em")
+          , ("font-size", "4em")
           ]
 
 controlPanel : Html msg        
@@ -64,5 +68,14 @@ controlPanel =
                 
 footer : Html msg
 footer =
-    div [ style [ ("border", "1px solid blue") ] ]
-        [ text "FOOTER" ]
+    div [ style [ ("border-top", "1px solid lightgrey")
+                , ("padding-top", "0.6em")
+                ] ]
+        [ span [] [ text "Go to"
+        , a [ href "#"
+            , style [ ("font-weight", "bold")
+                    , ("font-style", "italic")
+                    , ("margin-left", "0.5em")
+                    ]
+            ] [ text "Graphana Dashboard" ]
+        ] ]

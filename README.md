@@ -13,3 +13,14 @@ SANMonitor is web based interface to monitor san switches.
 - current statistics
 - aknowledging log
 - Nagios History
+
+## How to run the frontend for developement
+
+- install nodejs
+- install elm
+
+```
+$ cd frontend
+$ eml-reactor
+Listening on http://localhost:8000
+```
