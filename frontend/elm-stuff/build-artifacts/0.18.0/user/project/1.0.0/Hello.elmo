@@ -1,41 +1,161 @@
 var _user$project$Hello$footer = A2(
 	_elm_lang$html$Html$div,
-	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$style(
+			{
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'border', _1: '1px solid blue'},
+				_1: {ctor: '[]'}
+			}),
+		_1: {ctor: '[]'}
+	},
 	{
 		ctor: '::',
 		_0: _elm_lang$html$Html$text('FOOTER'),
 		_1: {ctor: '[]'}
 	});
-var _user$project$Hello$list = A2(
-	_elm_lang$html$Html$div,
-	{ctor: '[]'},
+var _user$project$Hello$controlPanelStyle = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
-		_0: _elm_lang$html$Html$text('LIST'),
+		_0: {ctor: '_Tuple2', _0: 'border', _1: '1px solid blue'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'margin-top', _1: '2%'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'margin-bottom', _1: '2%'},
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Hello$controlPanel = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _user$project$Hello$controlPanelStyle,
 		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html$text('CONTROL PANEL'),
+		_1: {ctor: '[]'}
+	});
+var _user$project$Hello$identity = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$style(
+			{
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'right'},
+				_1: {ctor: '[]'}
+			}),
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$span,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(
+					{
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin-right', _1: '1%'},
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('INDETITY'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: _elm_lang$html$Html$text('LOGOUT'),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Hello$headerStyle = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'border', _1: '1px solid black'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'padding', _1: '2px'},
+			_1: {ctor: '[]'}
+		}
 	});
 var _user$project$Hello$header = A2(
 	_elm_lang$html$Html$div,
-	{ctor: '[]'},
 	{
 		ctor: '::',
-		_0: _elm_lang$html$Html$text('HEADER'),
+		_0: _user$project$Hello$headerStyle,
 		_1: {ctor: '[]'}
-	});
-var _user$project$Hello$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
-	A2(
-		_elm_lang$html$Html$div,
-		{ctor: '[]'},
-		{
+	},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$style(
+					{
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '200%'},
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html$text('TITLE'),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
 			ctor: '::',
-			_0: _user$project$Hello$header,
+			_0: _user$project$Hello$identity,
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Hello$panelStyle = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'width', _1: '50%'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'margin-top', _1: '100px'},
 			_1: {
 				ctor: '::',
-				_0: _user$project$Hello$list,
+				_0: {ctor: '_Tuple2', _0: 'margin-left', _1: 'auto'},
 				_1: {
 					ctor: '::',
-					_0: _user$project$Hello$footer,
+					_0: {ctor: '_Tuple2', _0: 'margin-right', _1: 'auto'},
 					_1: {ctor: '[]'}
 				}
 			}
-		}));
+		}
+	});
+var _user$project$Hello$panel = A2(
+	_elm_lang$html$Html$div,
+	{
+		ctor: '::',
+		_0: _user$project$Hello$panelStyle,
+		_1: {ctor: '[]'}
+	},
+	{
+		ctor: '::',
+		_0: _user$project$Hello$header,
+		_1: {
+			ctor: '::',
+			_0: _user$project$Hello$controlPanel,
+			_1: {
+				ctor: '::',
+				_0: _user$project$Hello$footer,
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Hello$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(_user$project$Hello$panel);
