@@ -21,6 +21,6 @@ SANMonitor is web based interface to monitor san switches.
 
 ```
 $ cd frontend
-$ eml-reactor
+$ elm-reactor
 Listening on http://localhost:8000
 ```
