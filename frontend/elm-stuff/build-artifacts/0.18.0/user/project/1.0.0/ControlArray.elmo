@@ -1,0 +1,58 @@
+var _user$project$ControlArray$renderString = function (name) {
+	return A2(
+		_elm_lang$html$Html$td,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text(name),
+			_1: {ctor: '[]'}
+		});
+};
+var _user$project$ControlArray$renderHeaders = function (names) {
+	return {
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$tr,
+			{ctor: '[]'},
+			A2(_elm_lang$core$List$map, _user$project$ControlArray$renderString, names)),
+		_1: {ctor: '[]'}
+	};
+};
+var _user$project$ControlArray$renderRow = function (values) {
+	return A2(
+		_elm_lang$html$Html$tr,
+		{ctor: '[]'},
+		A2(_elm_lang$core$List$map, _user$project$ControlArray$renderString, values));
+};
+var _user$project$ControlArray$renderRows = function (values) {
+	return A2(_elm_lang$core$List$map, _user$project$ControlArray$renderRow, values);
+};
+var _user$project$ControlArray$controlArray = A2(
+	_elm_lang$html$Html$table,
+	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_lang$html$Html$thead,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$tr,
+					{ctor: '[]'},
+					A2(_elm_lang$core$List$map, _user$project$ControlArray$renderString, _user$project$TestData$headerNames)),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$tbody,
+				{ctor: '[]'},
+				_user$project$ControlArray$renderRows(_user$project$TestData$controlArrayData)),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$ControlArray$Props = F2(
+	function (a, b) {
+		return {headers: a, rows: b};
+	});

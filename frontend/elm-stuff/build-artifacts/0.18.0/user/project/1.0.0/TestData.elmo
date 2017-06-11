@@ -1,0 +1,94 @@
+var _user$project$TestData$controlArrayData = {
+	ctor: '::',
+	_0: {
+		ctor: '::',
+		_0: 'esx01',
+		_1: {
+			ctor: '::',
+			_0: 'brcsan2',
+			_1: {
+				ctor: '::',
+				_0: '34',
+				_1: {
+					ctor: '::',
+					_0: 'warning',
+					_1: {
+						ctor: '::',
+						_0: '23',
+						_1: {
+							ctor: '::',
+							_0: '3',
+							_1: {
+								ctor: '::',
+								_0: 'none',
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	_1: {
+		ctor: '::',
+		_0: {
+			ctor: '::',
+			_0: 'esx06',
+			_1: {
+				ctor: '::',
+				_0: 'brcsan2',
+				_1: {
+					ctor: '::',
+					_0: '12',
+					_1: {
+						ctor: '::',
+						_0: 'good',
+						_1: {
+							ctor: '::',
+							_0: '23',
+							_1: {
+								ctor: '::',
+								_0: '3',
+								_1: {
+									ctor: '::',
+									_0: 'alert',
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		_1: {ctor: '[]'}
+	}
+};
+var _user$project$TestData$headerNames = {
+	ctor: '::',
+	_0: 'Name',
+	_1: {
+		ctor: '::',
+		_0: 'Switch',
+		_1: {
+			ctor: '::',
+			_0: 'Port',
+			_1: {
+				ctor: '::',
+				_0: 'State',
+				_1: {
+					ctor: '::',
+					_0: 'wCount',
+					_1: {
+						ctor: '::',
+						_0: 'eCount',
+						_1: {
+							ctor: '::',
+							_0: 'Action',
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	}
+};

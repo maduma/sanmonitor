@@ -1,7 +1,8 @@
-module Hello exposing (..)
+module View exposing (..)
 
 
 import Html exposing (..)
+import ControlArray exposing (..)
 import Html.Attributes exposing (..)
 
 
@@ -57,13 +58,13 @@ controlPanelStyle =
     style [ ("text-align", "center")
           , ("margin-top", "2em")
           , ("margin-bottom", "2em")
-          , ("font-size", "4em")
+          , ("font-size", "1em")
           ]
 
 controlPanel : Html msg        
 controlPanel =
     div [ controlPanelStyle ]
-        [ text "CONTROL PANEL"]        
+        [ controlArray ]        
 
                 
 footer : Html msg
